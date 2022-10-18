@@ -4,7 +4,7 @@
  * Dit is de model voor de controller countries
  */
 
- class Country
+ class People
  {
     //properties
     private $db;
@@ -15,9 +15,9 @@
         $this->db = new Database();
     }
 
-    public function getCountries()
+    public function getPeople()
     {
-        $this->db->query('SELECT * FROM country');
+        $this->db->query('SELECT * FROM richestpeople');
         return $this->db->resultSet();
     }
  }
