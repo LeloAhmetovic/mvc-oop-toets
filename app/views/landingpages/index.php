@@ -3,6 +3,6 @@
 <h3><?= $data['sayHello']; ?></h3>
 <ul>
     <li>
-        <a href="<?= URLROOT; ?>/countries/index">Show countries</a>
+        <a href="<?= URLROOT; ?>/RichPeople/index">Toon rijkste mensen</a>
     </li>
 </ul>

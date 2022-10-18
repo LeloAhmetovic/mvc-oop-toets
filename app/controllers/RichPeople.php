@@ -1,21 +1,21 @@
 <?php
 
-class Countries extends Controller
+class RichPeople extends Controller
 {
     // properties
-    private $countryModel;
+    private $RichPeopleModel;
 
     // dit is de constructor van de controller
     public function __construct()
     {
-        $this->countryModel = $this->model('Country');
+        $this->RichPeopleModel = $this->model('People');
     }
 
-    public function index($land = 'Nederland', $age = 8998889)
+    public function index()
     {
-        // echo "hoi, ik al $age in $land. ";
+    
 
-        $records = $this->countryModel->getCountries();
+        $records = $this->RichPeopleModel->getRichPeople();
         //  var_dump($records);
 
         $rows = '';
