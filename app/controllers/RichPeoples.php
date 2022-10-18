@@ -11,7 +11,7 @@ class RichPeoples extends Controller
         $this->RichPeoplesModel = $this->model('People');
     }
 
-    public function index($MyName = 'Sadio Mané', $age = 30)
+    public function index()
     {
     
 
@@ -27,6 +27,7 @@ class RichPeoples extends Controller
                         <td>$items->Networth</td>
                         <td>$items->Age</td>
                         <td>$items->Company</td>
+                        <td><a href='" . URLROOT . "/Deleterichest/delete/$items->Id'>delete</a></td>
                       </tr>";
         }
 
