@@ -11,7 +11,7 @@ class RichPeoples extends Controller
         $this->RichPeoplesModel = $this->model('People');
     }
 
-    public function index()
+    public function index($MyName = 'Sadio Mané', $age = 30)
     {
     
 

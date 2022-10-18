@@ -15,9 +15,9 @@
         $this->db = new Database();
     }
 
-    public function getPeople()
+    public function getRichPeoples()
     {
-        $this->db->query('SELECT * FROM richestpeople');
+        $this->db->query('SELECT * FROM richestpeople ORDER BY Networth DESC');
         return $this->db->resultSet();
     }
  }
