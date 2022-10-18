@@ -10,13 +10,13 @@ class RichPeoples extends Controller
 
   public function delete($id)
   {
-    $this->peopleModel->deleteRichPeoples($id);
+    $this->RichPeopleModel->deleteRichPeoples($id);
 
     $data = [
       'title' => "Delete",
       'status' => "Delete succesfull"
     ];
 
-    $this->view('homepages/delete', $data);
+    $this->view('richestpeople/delete', $data);
   }
 }
